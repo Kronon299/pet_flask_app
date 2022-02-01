@@ -1,6 +1,6 @@
 from app import app, api, Quote
 
-api.add_resource(Quote, "/ai-quotes", "/ai-quotes/", "/ai-quotes/<int:id>")
+api.add_resource(Quote, "/ai-quotes", "/ai-quotes/", "/ai-quotes/<string:name>")
 
 if __name__ == '__main__':
     app.run(
