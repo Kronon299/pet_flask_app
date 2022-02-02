@@ -5,6 +5,10 @@ description = "Test api web app for CloudX Associate program"
 authors = ["Stanislau Klimovich <stasklimovich299@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+include = ["poetry.lock"]
+packages = [
+    { include = "pet_flask_app", format = "sdist" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
