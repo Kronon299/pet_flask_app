@@ -4,7 +4,7 @@ from flask import Flask
 from flask_restful import Api, Resource, reqparse
 from werkzeug.exceptions import BadRequest
 
-from image import Image, Session, Base
+from models import Image, Session, Base
 
 app = Flask(__name__)
 
